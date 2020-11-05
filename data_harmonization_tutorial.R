@@ -56,7 +56,7 @@ write.csv(combined_data_1, "m_combat.csv", row.names = FALSE)
 
 #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! the bootstrap function!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 proposed_bootstrap = function(data,formula){  
-  return(M.COMBAT(dat=data_harmonized_1$dat.combat, batch_new_1 , center=1, mod_1)$dat.combat)  
+  return(M_ComBat(dat=data_harmonized_1$dat.combat, batch_new_1 , center=1, mod_1)$dat.combat)  
 }
 
 #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Perform the bootstrap based on the last harmonization!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
